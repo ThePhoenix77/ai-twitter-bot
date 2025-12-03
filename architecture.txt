@@ -1,0 +1,35 @@
+[News Sources] --> [Fetcher Module] --> [Summarizer Module] --> [Tweet Generator Module] --> [Queue/Storage]
+                                                                 |
+                                                                 v
+[Scheduler (Cron)] --> [Poster Module] --> [Twitter API] --> [Twitter/X]
+
+
+Components:
+News Fetcher: Queries APIs/RSS for top news (e.g., 5-10 articles/hour to generate 24 tweets).
+Summarizer: Processes articles into key points using NLP.
+Tweet Generator: Creates 24 unique tweets (e.g., one per sub-topic or article). Uses diversity checks (e.g., cosine similarity on embeddings).
+Queue/Storage: Stores tweets in a free database (e.g., GitHub's artifact storage or a free MongoDB Atlas tier) to cycle through them hourly.
+Poster: Authenticates with Twitter API and posts one tweet per run.
+Scheduler: Triggers the process hourly (e.g., via cron on hosting platform).
+
+
+
+Data Flow:
+Hourly trigger fetches news.
+Summarize and generate 24 tweets (if needed; otherwise, pull from queue).
+Post the next tweet in sequence.
+Log and handle errors.
+Scalability: Start with one niche; expand to multiple by adding filters.
+Monitoring: Use free tools like Sentry or simple logging to track performance.
+
+
+
+Technology Stack
+Language: Python (easy for NLP and APIs).
+News API: NewsAPI (free tier) or feedparser for RSS.
+Summarization: Hugging Face Transformers (free, run locally or on free GPU credits).
+Tweet Uniqueness: Sentence Transformers for similarity checks.
+Twitter API: Tweepy library (Python wrapper for Twitter API v2).
+Hosting/Automation: GitHub Actions (free for public repos; supports cron scheduling).
+Storage: GitHub's built-in storage or free tiers of Supabase/Firebase for queues.
+Other Tools: Git for version control; Docker for containerization if needed.

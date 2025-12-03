@@ -1,0 +1,19 @@
+# Core HTTP + environment
+requests
+python-dotenv
+
+# HuggingFace summarization
+transformers
+sentencepiece
+
+# PyTorch backend (required for most HF models)
+torch
+
+# (Optional but recommended) for faster tokenizer operations
+tqdm
+
+# If you use beautifulsoup for scraping
+beautifulsoup4
+
+# If you use feedparser for RSS
+feedparser
