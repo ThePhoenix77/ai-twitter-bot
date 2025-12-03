@@ -1,11 +1,17 @@
 import os
 from fetcher import fetch_news
+from config import NICHE_KEYWORDS
 
 from dotenv import load_dotenv
 load_dotenv()
 
 from transformers import pipeline
 summarizer = pipeline("summarization", model = "facebook/bart-large-cnn")
+
+def score_summary(summary: str, keywords: list[str]) -> int:
+    summary_lower = summary.lower()
+    score = sum(1 for kw in keywords if kw.lower() in summary_lower)
+    return score
 
 def summarize_article(title: str, description: str, url: str):
     summary_list = []
@@ -14,9 +20,8 @@ def summarize_article(title: str, description: str, url: str):
         model_input += f"Read more: {url}"
     
     summary = summarizer(model_input, max_length = min(max(len(model_input.split()) - 20, 60), 279), min_length = 20, do_sample = False)[0]['summary_text']
-    return summary
-
-
+    score = score_summary(summary, NICHE_KEYWORDS)
+    return [(summary, score)]
 
 
 # OpenAI trial(not free w9)
