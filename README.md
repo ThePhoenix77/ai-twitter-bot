@@ -1,89 +1,92 @@
 # ai-twitter-bot
 
-An automated Twitter (X) bot that fetches top news in a specified niche, summarizes them into 24 unique tweets, and posts one every hour using free services. Built for autonomy, ensuring operation without user intervention.
+An automated Twitter (X) assistant that fetches niche news, distills each article into tweet-sized summaries, de-duplicates previously posted content, and posts updates through the unofficial `tweety` client.
 
-## Features
-- **News Fetching**: Pulls top headlines from APIs or RSS feeds.
-- **AI Summarization**: Uses Hugging Face models for concise, accurate summaries.
-- **Unique Tweet Generation**: Ensures 24 diverse tweets per cycle to avoid repetition.
-- **Automated Posting**: Hourly posts via cron scheduling on free hosting.
-- **Error Handling**: Retries, logging, and alerts for reliability.
-- **Free Hosting**: Runs on GitHub Actions with no costs.
+## ✨ Features
+- **News Fetching:** Queries NewsAPI with configurable keywords and normalizes article metadata.
+- **AI Summarisation:** Uses Hugging Face's BART pipeline to produce concise tweet candidates and score them by keyword relevance.
+- **Duplicate Filtering:** Maintains a rolling history of published tweets to avoid reposting similar content.
+- **Hands-Off Posting:** Logs into X via `tweety` and posts the selected tweets in sequence.
+- **Local Persistence:** Stores the daily batch as well as the long-term tweet history on disk for auditing.
 
-## Prerequisites
-- Python 3.8+
-- GitHub account (for hosting)
-- Twitter Developer account (for API access)
-- NewsAPI account (free tier)
-- Basic knowledge of Python and Git
+## 🧱 Architecture at a Glance
+```
+[Scheduler/manual run]
+          |
+          v
+main.py ─▶ fetcher.fetch_news() ─▶ summarizer.summarize_article()
+          |                                     |
+          |                                     └─▶ score_summary()
+          └─▶ storage.save_daily_tweets()
+                    │
+                    ├─▶ storage.filter_duplicates() ─▶ storage.save_tweets_to_history()
+                    │
+                    └─▶ tweeter.tweet_daily()
+```
 
-## Project Structure
+- **`config/config.py`** – Lists the niche keywords, article cap, and daily tweet count.
+- **`fetcher.py`** – Builds the NewsAPI query and extracts title/description/URL triples.
+- **`summarizer.py`** – Loads the BART summarisation pipeline and scores summaries by keyword hits.
+- **`storage.py`** – Persists tweet history (`data/tweets.txt`) and the current batch (`data/daily_tweets.txt`).
+- **`tweeter.py`** – Wraps `tweety.TweetClient` to log in and post each tweet with basic error handling.
+- **`helper.py`** – Optional console helper for printing fetched articles during debugging.
+
+## 📁 Project Structure
+```
 ai-twitter-bot/
-├── .env  # Environment variables (add to .gitignore)
-├── .github/workflows/tweet.yml  # GitHub Actions workflow
-├── config.py  # Configuration settings
-├── main.py  # Entry point script
-├── fetcher.py  # News fetching module
-├── summarizer.py  # Summarization module
-├── generator.py  # Tweet generation module
-├── poster.py  # Posting module
-├── queue.py  # Tweet queue management
-├── requirements.txt  # Dependencies
-├── Dockerfile  # For containerization
-└── README.md  # As provided earlier
+├── architecture.txt          # Textual architecture overview
+├── config/
+│   └── config.py             # Keyword and limit configuration
+├── data/
+│   ├── daily_tweets.txt      # Current cycle’s tweets
+│   └── tweets.txt            # Long-term tweet history
+├── fetcher.py                # NewsAPI client
+├── helper.py                 # Debug print helpers
+├── main.py                   # Orchestrates the end-to-end workflow
+├── requirements.txt          # Python dependencies
+├── storage.py                # Disk persistence and deduplication helpers
+├── summarizer.py             # Hugging Face summarisation pipeline
+├── tweeter.py                # X/Twitter posting utilities
+└── README.md
+```
 
-## Installation
-1. Clone the repo: `git clone https://github.com/yourusername/twitter-news-bot.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set up environment: Create a `.env` file with:
-    NEWS_API_KEY=your_newsapi_key 
-    TWITTER_API_KEY=your_twitter_key 
-    TWITTER_API_SECRET=your_twitter_secret 
-    TWITTER_ACCESS_TOKEN=your_access_token 
-    TWITTER_ACCESS_SECRET=your_access_secret
-4. Configure niche: Edit `config.py` for your field (e.g., 'ai').
+## 🚀 Getting Started
+1. **Clone the repo**
+    ```bash
+    git clone https://github.com/ThePhoenix77/ai-twitter-bot.git
+    cd ai-twitter-bot
+    ```
+2. **Install dependencies**
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+3. **Create a `.env` file** in the project root:
+    ```ini
+    NEWS_API_KEY=your_newsapi_key
+    TWITTER_USERNAME=your_username
+    TWITTER_PASSWORD=your_password
+    ```
+    > `summarizer.py` will download the BART weights the first time it runs; keep the environment active until it completes.
+4. **Review configuration** in `config/config.py` to adjust keywords, fetch limit, or number of tweets to publish per run.
 
-## Usage
-- **Local Testing**: Run `python main.py` to generate and post a test tweet.
-- **Deployment**: Push to GitHub; Actions will handle hourly runs.
-- **Customization**: Modify `niche` in config for different topics.
+## ▶️ Usage
+- **Dry run (no posting):** Comment out the `tweet_daily` call in `main.py` to inspect the summaries first.
+- **Full run:**
+  ```bash
+  python main.py
+  ```
+  The script fetches articles, prints the top-scoring summaries, saves them under `data/`, and posts any tweets that are not yet in the history file.
 
-## Project Roadmap
-### Phase 1: Setup and Research (1-2 days)
-- Research and select niche/sources.
-- Set up accounts and test APIs manually.
-- Install tools and create config files.
-- **Details**: Ensure sources are reliable (e.g., no paywalls). Test summarization for accuracy.
+## 🔄 Future Enhancements
+- Schedule hourly runs via cron, GitHub Actions, or another job runner.
+- Add semantic similarity checks (e.g., embeddings) instead of keyword scoring alone.
+- Expand to multiple niches by parameterising the configuration or loading from external files.
+- Introduce richer logging or notifications for failures.
 
-### Phase 2: Core Development (3-5 days)
-- Build fetcher, summarizer, generator, and poster modules.
-- Implement uniqueness checks and error handling.
-- **Details**: Use BART model for summaries (max 100 words). Generate tweets with templates like "Latest in [niche]: [summary] #Hashtag". Test for diversity.
+## 🤝 Contributing
+Pull requests are welcome. Please run your changes locally and ensure `python main.py` completes without errors.
 
-### Phase 3: Automation and Hosting (2-3 days)
-- Containerize with Docker.
-- Set up GitHub Actions workflow with cron (e.g., `0 * * * *`).
-- Integrate queue for tweet cycling.
-- **Details**: Workflow runs hourly, fetching news if queue empty. Use secrets for keys. Monitor logs in Actions tab.
-
-### Phase 4: Testing and Iteration (1-2 days)
-- Run end-to-end tests over 24 hours.
-- Fix issues like API errors or duplicates.
-- **Details**: Use a test Twitter account. Check logs for failures; iterate on prompts for better uniqueness.
-
-### Phase 5: Maintenance and Expansion (Ongoing)
-- Monitor performance and update dependencies.
-- Add features like multi-niche support.
-- **Details**: Weekly reviews; expand to images or replies if needed.
-
-## Challenges and Mitigations
-- API limits: Cycle tweets to stay under 500/day.
-- Uniqueness: Similarity thresholds prevent repeats.
-- Hosting: Free tiers may throttle; switch to Render if needed.
-- Security: Keys in secrets; no logging of sensitive data.
-
-## Contributing
-Fork and submit PRs. Ensure tests pass.
-
-## License
+## 📄 License
 MIT License.

@@ -2,18 +2,11 @@
 requests
 python-dotenv
 
-# HuggingFace summarization
+# Hugging Face summarisation stack (BART large CNN)
 transformers
+torch
 sentencepiece
 
-# PyTorch backend (required for most HF models)
-torch
-
-# (Optional but recommended) for faster tokenizer operations
-tqdm
-
-# If you use beautifulsoup for scraping
-beautifulsoup4
-
-# If you use feedparser for RSS
-feedparser
+# Posting client for X/Twitter
+tweety-ns
+tweepy

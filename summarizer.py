@@ -19,9 +19,14 @@ def summarize_article(title: str, description: str, url: str):
     if url:
         model_input += f"Read more: {url}"
     
-    summary = summarizer(model_input, max_length = min(max(len(model_input.split()) - 20, 60), 279), min_length = 20, do_sample = False)[0]['summary_text']
+    summary = summarizer(
+        model_input,
+        max_length=min(max(len(model_input.split()) - 20, 60), 279),
+        min_length=20,
+        do_sample=False,
+    )[0]["summary_text"]
     score = score_summary(summary, NICHE_KEYWORDS)
-    return [(summary, score)]
+    return [(summary, score, url)]
 
 
 # OpenAI trial(not free w9)
