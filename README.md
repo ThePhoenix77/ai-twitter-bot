@@ -1,15 +1,14 @@
 # ai-twitter-bot
 
-An automated Twitter (X) assistant that fetches niche news, distills each article into tweet-sized summaries, de-duplicates previously posted content, and posts updates through the unofficial `tweety` client.
+An automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
 
-## ✨ Features
+## Features
 - **News Fetching:** Queries NewsAPI with configurable keywords and normalizes article metadata.
 - **AI Summarisation:** Uses Hugging Face's BART pipeline to produce concise tweet candidates and score them by keyword relevance.
-- **Duplicate Filtering:** Maintains a rolling history of published tweets to avoid reposting similar content.
-- **Hands-Off Posting:** Logs into X via `tweety` and posts the selected tweets in sequence.
+- **Hands-Off Posting:** Logs on your behalf into your X (Twitter) account and posts the selected tweets in sequence.
 - **Local Persistence:** Stores the daily batch as well as the long-term tweet history on disk for auditing.
 
-## 🧱 Architecture at a Glance
+## Architecture at a Glance
 ```
 [Scheduler/manual run]
           |
@@ -19,7 +18,7 @@ main.py ─▶ fetcher.fetch_news() ─▶ summarizer.summarize_article()
           |                                     └─▶ score_summary()
           └─▶ storage.save_daily_tweets()
                     │
-                    ├─▶ storage.filter_duplicates() ─▶ storage.save_tweets_to_history()
+                    ├─▶ storage.save_tweets_to_history()
                     │
                     └─▶ tweeter.tweet_daily()
 ```
@@ -65,8 +64,10 @@ ai-twitter-bot/
 3. **Create a `.env` file** in the project root:
     ```ini
     NEWS_API_KEY=your_newsapi_key
-    TWITTER_USERNAME=your_username
-    TWITTER_PASSWORD=your_password
+    X_API_KEY=your_x_api_key
+    X_API_KEY_SECRET=your_x_api_key_secret
+    ACCESS_TOKEN=your_x_access_token
+    ACCESS_TOKEN_SECRET=your_x_access_token_secret
     ```
     > `summarizer.py` will download the BART weights the first time it runs; keep the environment active until it completes.
 4. **Review configuration** in `config/config.py` to adjust keywords, fetch limit, or number of tweets to publish per run.
@@ -75,18 +76,17 @@ ai-twitter-bot/
 - **Dry run (no posting):** Comment out the `tweet_daily` call in `main.py` to inspect the summaries first.
 - **Full run:**
   ```bash
-  python main.py
+  python3.11 main.py
   ```
-  The script fetches articles, prints the top-scoring summaries, saves them under `data/`, and posts any tweets that are not yet in the history file.
+  The script fetches articles, prints the top scoring summaries, saves them under `data/`, and posts any tweets that are not yet in the history file.
 
-## 🔄 Future Enhancements
-- Schedule hourly runs via cron, GitHub Actions, or another job runner.
-- Add semantic similarity checks (e.g., embeddings) instead of keyword scoring alone.
-- Expand to multiple niches by parameterising the configuration or loading from external files.
-- Introduce richer logging or notifications for failures.
+## 🔄 Future Enhancements.
+- Adding semantic similarity checks (e.g., embeddings) instead of keyword scoring alone.
+- Expanding to multiple niches by parameterising the configuration or loading from external files.
+- Introducing richer logging or notifications for failures.
 
-## 🤝 Contributing
+## Contributing
 Pull requests are welcome. Please run your changes locally and ensure `python main.py` completes without errors.
 
-## 📄 License
+## License
 MIT License.
