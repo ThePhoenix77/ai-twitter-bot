@@ -1,6 +1,7 @@
 # ai-twitter-bot
 
 An automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
+You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it.
 
 ## Features
 - **News Fetching:** Queries NewsAPI with configurable keywords and normalizes article metadata.
