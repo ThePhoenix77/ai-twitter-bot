@@ -1,0 +1,50 @@
+--- 04/12/2025 ---
+1. Deep learning methods identified a large and evolutionarily conserved X-linked low recombination region in placental mammals. It serves as both a barrier to gene flow in hybridizing lineages and an accurate phylogenomic marker.
+2. Researchers combined deep learning with high-resolution physics to create the first Milky Way model. Their AI learned how gas behaves after supernovae, removing one of the biggest computational bottlenecks.
+3. Laurence Moroney, director of AI at Arm, joins Ben Lorica to chat about the state of deep learning frameworks. Listen in for Laurence’s thoughts about posttraining; t…
+4. eForth in C/C++ - multi-platform (Linux,MacOS,Windows,ESP32,WASM) - chochain/eforth.
+5. Deep learning models simultaneously trained on multiple datasets improve base-editing activity prediction. CRISPR base editing enables the precise introduction of single-nucleotide mutations in the genome.
+6. Deep learning-based multiscale integration of spatial omics with tumor morphology. Spatial transcriptomics technologies are still too restrictive for widespread clinical use. M ISO is a deep learning framework that allo…
+7. Zamboni et al. reveal how enhancers encode cell-type-specific responses to CNS injury. By combining multiomic profiling, deep learning and in vivo screening, they uncover injury-responsive enhancer logic and enable targeting of reactive astrocytes.
+8. A deep learning model for epidermal growth factor receptor prediction using ensemble residual convolutional neural network.
+9. The feature is opt-in, but still raises concerns about privacy. Called "Chemistry" it asks users interactive questions.
+10. Researchers Discover Two Mysterious Voids in Giza Pyramid. A strangely smooth expanse of granite on the Menkaure Pyramid might be a second entrance.
+11. A glasses-free three-dimensional display, which is as large as a conventional desktop screen and has a viewing angle larger than 100°, is achieved by an artificial intelligence-powered optimization algorithm.
+12. We apparently have more in common with some shorebirds than we previously thought. Humans can Detect Buried Objects Without Touching Them.
+13. A comprehensive, technical guide to understanding Artificial Intelligence from first principles. Built for experienced engineers who want to deeply understand how AI actually works.
+14. AI Image of Hurricane Melissa Featuring Birds “Larger Than Football Fields” Goes Viral. "This will be in meteorology textbooks," says one expert.
+15. CUDA Ontology, CUDA&rsquo;s terminology carries significant overloading. CUDA itself refers to at least five distinct concepts.
+16. The Fastest Aircraft of World War II, Ranked. When you think about World War Two, you probably picture tanks crawling through Europe or ships battling it out in the Pacific. But the real ...
+17. Some of the most memorable classic cars in automotive history had the shortest runs on the production line. These one-year wonders weren’t necessarily...
+18. The American automotive landscape has seen some incredible success stories, from the Ford Model T to the Tesla Model S. But for every triumph, there have been some of the worst cars ever sold.
+19. This article celebrates 10 moments when Detroit automakers stuffed high-performance engines into pickup trucks. From the Dodge Lil...
+20. Has Steampunk Delivered the Hoverboard? The hoverboard is both a marvel of technology and a source of hacker parts that have appeared in so many projects on these pages. It contains an accelero… read more.
+21. Deep-learning pioneer LeCun is also in early talks to raise funds for a new venture, according to the report.
+22. So Long, Firefox, Part One. On September 23rd, 2002, a new web browser was re-launched.
+23. The sixth Community Asks Sprint, which is the final one of 2025, has now concluded. The focus was on site design and usability, and we got a number of requests for things to improve. The first ask we received was for a copy button for code blocks.
+24. Taiwan's Smart Tech Revolution: Innovation Meets Intelligence. These Taiwan Excellence Award-winning companies are combining innovation, design and everyday practicality to shape the future of smart living.
+--- 06/12/2025 ---
+1. Deep learning methods identified a large and evolutionarily conserved X-linked low recombination region in placental mammals. It serves as both a barrier to gene flow in hybridizing lineages and an accurate phylogenomic marker.
+2. Researchers combined deep learning with high-resolution physics to create the first Milky Way model. Their AI learned how gas behaves after supernovae, removing one of the biggest computational bottlenecks.
+3. Laurence Moroney, director of AI at Arm, joins Ben Lorica to chat about the state of deep learning frameworks. Listen in for Laurence’s thoughts about posttraining; t…
+4. eForth in C/C++ - multi-platform (Linux,MacOS,Windows,ESP32,WASM) - chochain/eforth.
+5. Deep learning models simultaneously trained on multiple datasets improve base-editing activity prediction. CRISPR base editing enables the precise introduction of single-nucleotide mutations in the genome.
+6. Deep learning-based multiscale integration of spatial omics with tumor morphology. Spatial transcriptomics technologies are still too restrictive for widespread clinical use. M ISO is a deep learning framework that allo…
+7. Zamboni et al. reveal how enhancers encode cell-type-specific responses to CNS injury. By combining multiomic profiling, deep learning and in vivo screening, they uncover injury-responsive enhancer logic and enable targeting of reactive astrocytes.
+8. The feature is opt-in, but still raises concerns about privacy. Called "Chemistry" it asks users interactive questions.
+9. Researchers Discover Two Mysterious Voids in Giza Pyramid. A strangely smooth expanse of granite on the Menkaure Pyramid might be a second entrance.
+10. A glasses-free three-dimensional display, which is as large as a conventional desktop screen and has a viewing angle larger than 100°, is achieved by an artificial intelligence-powered optimization algorithm.
+11. We apparently have more in common with some shorebirds than we previously thought. Humans can Detect Buried Objects Without Touching Them.
+12. CUDA Ontology, CUDA&rsquo;s terminology carries significant overloading. CUDA itself refers to at least five distinct concepts.
+13. The Fastest Aircraft of World War II, Ranked. When you think about World War Two, you probably picture tanks crawling through Europe or ships battling it out in the Pacific. But the real ...
+14. Some of the most memorable classic cars in automotive history had the shortest runs on the production line. These one-year wonders weren’t necessarily...
+15. Mac System 7 On a G4? Why Not! Over the many years Apple Computer have been in operation, they have made a success of nearly-seamlessly transitioning multiple times between both operating systems and their underlying architecture.
+16. The American automotive landscape has seen some incredible success stories, from the Ford Model T to the Tesla Model S. But for every triumph, there have been some of the worst cars ever sold.
+17. This article celebrates 10 moments when Detroit automakers stuffed high-performance engines into pickup trucks. From the Dodge Lil...
+18. Has Steampunk Delivered the Hoverboard? The hoverboard is both a marvel of technology and a source of hacker parts that have appeared in so many projects on these pages. It contains an accelero… read more.
+19. Deep-learning pioneer LeCun is also in early talks to raise funds for a new venture, according to the report.
+20. So Long, Firefox, Part One. On September 23rd, 2002, a new web browser was re-launched.
+21. The sixth Community Asks Sprint, which is the final one of 2025, has now concluded. The focus was on site design and usability, and we got a number of requests for things to improve. The first ask we received was for a copy button for code blocks.
+22. Taiwan's Smart Tech Revolution: Innovation Meets Intelligence. These Taiwan Excellence Award-winning companies are combining innovation, design and everyday practicality to shape the future of smart living.
+23. Kentstone84/APEX-GPU is an open-source CUDA toolkit. It lets you run CUDA apps on AMD GPUs without recompilation.
+24. Devi Parikh is a former senior director of GenAI at Meta. She is now co-CEO of an AI company. Parikh says you don't need a Ph.D. to do cutting-edge work in the field.

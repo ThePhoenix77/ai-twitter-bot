@@ -101,9 +101,3 @@ outputs/
 **/outputs/
 models/
 checkpoints/
-
-# Project-specific data directories
-artifacts/
-queue/
-storage/
-data/
