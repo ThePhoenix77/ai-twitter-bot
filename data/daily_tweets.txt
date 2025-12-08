@@ -1,4 +1,3 @@
-Deep learning assisted LDPC decoding for 5G IoT networks in fading environments, Scientific Reports - Correction. || https://www.nature.com/articles/s41598-025-29260-3
 Scientific Reports - Deep learning for microbial life detection in deep subseafloor samples: objective cell recognition. || https://www.nature.com/articles/s41598-025-29239-0
 Xiaomi has unveiled MiMo-Embodied, an open-source foundational model that integrates autonomous driving with embodied intelligence. The research team includes Fuli Luo, a former DeepSeek deep learning researcher who recently joined Xiaomi. || https://www.digitimes.com/news/a20251124PD239/xiaomi-autonomous-driving-training-robotics-deepseek.html
 Scientific Reports - The remote sensing method for large-scale asphalt pavement aging assessment with automated sample generation and deep learning. || https://www.nature.com/articles/s41598-025-29966-4
