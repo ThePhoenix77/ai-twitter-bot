@@ -1,5 +1,8 @@
 name: ai-twitter-bot
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 * * * *"
