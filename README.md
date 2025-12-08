@@ -4,6 +4,7 @@ An automated Twitter (X) assistant that fetches niche news, distills each articl
 You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it
 
 ## Features
+- **Automated posting:** This project uses github workflow and github actions to schedule the posts hourly(personal choice), you can modify it to your taste by changeing the TWEET_COUNT in config.py and updating the cron in tweet.yml to your choice.
 - **News Fetching:** Queries NewsAPI with configurable keywords and normalizes article metadata.
 - **AI Summarisation:** Uses Hugging Face's BART pipeline to produce concise tweet candidates and score them by keyword relevance.
 - **Hands-Off Posting:** Logs on your behalf into your X (Twitter) account and posts the selected tweets in sequence.
