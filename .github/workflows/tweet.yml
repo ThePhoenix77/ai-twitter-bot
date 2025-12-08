@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true   # IMPORTANT: Allows pushing changes
 
+      # Setting up Python and dependecies
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -21,6 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Running the script with env variables
       - name: Run tweet script
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
@@ -29,3 +33,16 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         run: python3.11 main.py
+
+      # Letting the github action to commit & push updated files(data/daily_tweet.txt & data/tweets.txt)
+      - name: Commit updated data files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+          git commit -m "Auto-update tweet history" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push || echo "Nothing to push"

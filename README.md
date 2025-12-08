@@ -1,13 +1,14 @@
 # ai-twitter-bot
 
 An automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
-You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it.
+You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it
 
 ## Features
 - **News Fetching:** Queries NewsAPI with configurable keywords and normalizes article metadata.
 - **AI Summarisation:** Uses Hugging Face's BART pipeline to produce concise tweet candidates and score them by keyword relevance.
 - **Hands-Off Posting:** Logs on your behalf into your X (Twitter) account and posts the selected tweets in sequence.
 - **Local Persistence:** Stores the daily batch as well as the long-term tweet history on disk for auditing.
+- **Duplicates filtering:** Each tweet is unique, as the X (Twitter) imposes so the account isn't considered a bot and can longer tweet as necessary.
 
 ## Architecture at a Glance
 ```
@@ -19,7 +20,7 @@ main.py ─▶ fetcher.fetch_news() ─▶ summarizer.summarize_article()
           |                                     └─▶ score_summary()
           └─▶ storage.save_daily_tweets()
                     │
-                    ├─▶ storage.save_tweets_to_history()
+                    ├─▶ storage.filter_duplicates()    └─▶ storage.save_tweets_to_history()
                     │
                     └─▶ tweeter.tweet_daily()
 ```

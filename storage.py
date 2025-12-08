@@ -7,8 +7,21 @@ DAILY_TWEETS_FILE_PATH = "data/daily_tweets.txt"
 def load_tweets_history() -> set[str]:
     if not os.path.exists(TWEETS_FILE_PATH):
         return set()
-    with open(TWEETS_FILE_PATH, "r", encoding = "utf-8") as f:
-        return set(line.strip() for line in f.readlines() if not line.startswith('---') )
+
+    history: set[str] = set()
+    with open(TWEETS_FILE_PATH, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("---"):
+                continue
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if ". " in stripped:
+                _, summary = stripped.split(". ", 1)
+            else:
+                summary = stripped
+            history.add(summary)
+    return history
 
 def save_tweets_to_history(tweet: str, index: int):
     today = datetime.now().strftime("%d/%m/%Y")
@@ -36,12 +49,19 @@ def save_daily_tweets(daily_tweets: list[tuple[str, int, str]]):
                 line = summary_clean
             f.write(f"{line}\n")
 
-# def filter_duplicates(daily_tweets: list[tuple[str, int]]) -> list[tuple[str, int]]:
-#     history = load_tweets_history()
-#     new_tweets = []
+def filter_duplicates(daily_tweets: list[tuple[str, int, str]]) -> list[tuple[str, int, str]]:
+    history = load_tweets_history()
+    new_tweets: list[tuple[str, int, str]] = []
+    seen_today: set[str] = set()
 
-#     for i, (summary, score) in enumerate(daily_tweets, start = 1):
-#         if summary not in history:
-#             new_tweets.append((summary, score))
-#             save_tweets_to_history(summary, i)
-#     return new_tweets
+    for summary, score, url in daily_tweets:
+        summary_clean = summary.strip()
+
+        if summary_clean in history or summary_clean in seen_today:
+            continue
+
+        new_tweets.append((summary, score, url))
+        seen_today.add(summary_clean)
+        save_tweets_to_history(summary_clean, len(seen_today))
+
+    return new_tweets

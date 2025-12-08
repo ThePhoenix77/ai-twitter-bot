@@ -1,7 +1,7 @@
 import os
 from fetcher import fetch_news
 from summarizer import summarize_article
-from storage import save_daily_tweets
+from storage import save_daily_tweets, filter_duplicates
 from helper import file_empty_checker, print_article
 from tweeter import tweeeter
 from config import TWEET_COUNT
@@ -25,8 +25,11 @@ def main():
             all_summaries.extend(summary_list)
 
         top_summaries = sorted(all_summaries, key=lambda x: x[1], reverse=True)[:TWEET_COUNT]
-        save_daily_tweets(top_summaries)
-        for i, (summary, score, url) in enumerate(top_summaries, 1):
+        unique_summaries = filter_duplicates(top_summaries)
+        if not unique_summaries:
+            print("No new tweets to schedule today; all candidates were duplicates.\n")
+        save_daily_tweets(unique_summaries)
+        for i, (summary, score, url) in enumerate(unique_summaries, 1):
             if url:
                 preview = f"{summary}\n{url}"
             else:
