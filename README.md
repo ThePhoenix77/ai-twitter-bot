@@ -1,7 +1,7 @@
 # ai-twitter-bot
 
 An automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
-You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it
+You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it.
 
 ## Features
 - **Automated posting:** This project uses github workflow and github actions to schedule the posts hourly or so(personal choice), you can modify it to your taste by changeing the TWEET_COUNT in config.py and updating the cron in tweet.yml to your choice.
