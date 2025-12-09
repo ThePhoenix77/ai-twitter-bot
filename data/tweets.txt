@@ -64,3 +64,6 @@
 13. Harnessing artificial intelligence to advance CRISPR-based genome editing technologies. The authors review how artificial intelligence, including deep learning, is advancing genome editing.
 14. How Deep Learning Is Teaching Marketers to Think Smarter. In marketing, AI is most broadly known for developing creative assets. But given the wealth of available […]
 15. I first got into deep learning in 2012, when AlexNet came out. I was CTO of Jetpac, a startup that aimed to provide information about bars, hotels, and restaurants by analyzing public photos. The results …
+--- 09/12/2025 ---
+1. Intelligent retinal disease detection using deep learning, Scientific Reports. Scientific Reports - Intelligent retinal Disease detection usingdeep learning.
+2. There are plenty of well-known models among the 8-bit machines of the 1980s. They were merely the stars among a plethora of others, and eve…
