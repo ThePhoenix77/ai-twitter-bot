@@ -67,3 +67,10 @@
 --- 09/12/2025 ---
 1. Intelligent retinal disease detection using deep learning, Scientific Reports. Scientific Reports - Intelligent retinal Disease detection usingdeep learning.
 2. There are plenty of well-known models among the 8-bit machines of the 1980s. They were merely the stars among a plethora of others, and eve…
+--- 13/12/2025 ---
+1. First-of-Its-Kind AI Digital Biomarker for Chronic Stress. Johns Hopkins University School of Medicine researchers unveil a new artificial intelligence (AI) deep learning digital biomarker.
+2. How to launch a Deep Learning VM on Google Cloud. Setting up a local Deep Learning environment can be a headache. Google Cloud and Canonical work toget…
+3. Real-time concrete strength monitoring using piezoelectric sensors and deep learning. Traditional concrete testing can be labour-intensive and limited in accuracy, consistency, and real-time applicability.
+4. The new 'Redstone' AI upscaler makes PC games look better, but it would be truly spectacular on consoles or handhelds.
+5. Shelf Life Extended: Hacking E-Waste Tags into Conference Badges. Ever wonder what happens to those digital price tags you see in stores once they run out of juice? In what is a prime example of e-waste, many of those price tags are made with
+6. 11 Forgotten 90s Cars That Are Still Fast by Today's Standards. Models like the Mitsubishi 3000GT VR-4, Nissan...
