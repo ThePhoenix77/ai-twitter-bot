@@ -18,4 +18,7 @@ def print_articles(articles):
         print("-" * 40)
 
 def file_empty_checker(path):
+    if not os.path.exists(path):
+        open(path, "w", encoding="utf-8").close()
+        return True
     return os.path.getsize(path) == 0

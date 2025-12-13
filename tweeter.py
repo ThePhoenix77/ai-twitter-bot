@@ -60,7 +60,7 @@ def tweeeter():
         else:
             summary, url = raw_entry, ""
 
-        final_tweet = summary if not url else f"{summary}\n\n{url}"
+        final_tweet = summary if not url else f"{summary}\n\n#news #AI #tips\n\n{url}"
         response = client.create_tweet(text=final_tweet)
         tweet_id = response.data.get("id") if response and response.data else "?"
         print(f"Tweet sent successfully. ID: {tweet_id}\n")
