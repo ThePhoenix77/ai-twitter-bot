@@ -1,0 +1,1 @@
+MultiCell is a deep learning method to capture complex cell dynamics during multicellular development. || https://www.nature.com/articles/s41592-025-02983-x

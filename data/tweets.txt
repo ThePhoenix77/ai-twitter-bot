@@ -78,3 +78,6 @@
 1. Automaker Tata Motors unveils funky new vehicle with head-turning design. Tata Motors: 'Awesome little thing', "Good step forward."
 1. These Seemingly Normal Cars are Actually Extremely Rare. We all know about the Ferraris and Lamborghinis that make headlines with their limited production runs. But some of the rarest cars on American roads are...
 1. Researchers used a deep learning AI model to uncover the first imaging-based biomarker of chronic stress by measuring adrenal gland volume on routine CT scans. This new metric, the Adrenal Volume Index, correlates strongly with cortisol levels.
+--- 16/12/2025 ---
+1. Deep learning (DL)-based automated treatment planning has the potential to improve radiotherapy planning for patients in cancer. How best to implement them in the clinic is less clear. Authors propose a hybrid strategy to develop a DL-based autom…
+2. MultiCell is a deep learning method to capture complex cell dynamics during multicellular development.
