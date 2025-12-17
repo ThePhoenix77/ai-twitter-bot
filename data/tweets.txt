@@ -85,3 +85,4 @@
 --- 17/12/2025 ---
 1. CellPaint-POSH combines pooled CRISPR screening with Cell Painting. Using self-supervised deep learning on cell images, the method enables discovery of gene function and biological networks.
 1. Google is launching an experimental agent to comb through your emails, calendar, and documents to deliver a briefing to your inbox every morning. The new feature, calle…
+1. Meet CC, Google's new way to organize your hectic schedule. It will help you keep on top of tasks, and follow up with everyone you need to.
