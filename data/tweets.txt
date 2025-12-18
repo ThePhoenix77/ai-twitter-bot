@@ -88,3 +88,4 @@
 1. Meet CC, Google's new way to organize your hectic schedule. It will help you keep on top of tasks, and follow up with everyone you need to.
 --- 18/12/2025 ---
 1. Google's CC AI agent is a morning brief for early birds that taps into Workspace. Google Labs launched its AI agent test, CC, which creates a daily morning brief.
+1. Google is experimenting with CC, which sends users emails to help manage to-do lists and tasks. Google CC Is A Gmail Assistant That Emails You Every Morning.
