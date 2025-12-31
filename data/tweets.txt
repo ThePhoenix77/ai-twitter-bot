@@ -97,3 +97,5 @@
 1. Yoshua Bengio, known as one of the "AI godfathers," said that while more jobs will be automated by AI, human qualities like love will always be valuable.
 --- 29/12/2025 ---
 1. A library for reproducible deep learning. Contribute to microsoft/RepDL development by creating a GitHub account.
+--- 31/12/2025 ---
+1. A friend of mine is producing a series of HOWTO videos for an open source project. He needed a better microphone than the one built into his laptop. Upon searching, he was face…
