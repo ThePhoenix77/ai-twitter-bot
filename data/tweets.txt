@@ -101,3 +101,5 @@
 1. A friend of mine is producing a series of HOWTO videos for an open source project. He needed a better microphone than the one built into his laptop. Upon searching, he was face…
 --- 01/01/2026 ---
 1. Epidemic dynamics prediction using fractional SIRD and deep learning, Scientific Reports.
+--- 02/01/2026 ---
+1. Jon Peddie’s The Graphics Chip Chronicles On Graphics Controller History. Using computers that feature a high-resolution, full-color graphical interface is commonplace today. It took a lot of effort and ingenuity to get to this point.
