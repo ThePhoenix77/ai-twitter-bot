@@ -103,3 +103,5 @@
 1. Epidemic dynamics prediction using fractional SIRD and deep learning, Scientific Reports.
 --- 02/01/2026 ---
 1. Jon Peddie’s The Graphics Chip Chronicles On Graphics Controller History. Using computers that feature a high-resolution, full-color graphical interface is commonplace today. It took a lot of effort and ingenuity to get to this point.
+--- 03/01/2026 ---
+1. ChatGPT Glossary: 61 AI Terms Everyone Should Know. This glossary will help you stay up-to-date.
