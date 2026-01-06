@@ -106,3 +106,5 @@
 --- 03/01/2026 ---
 1. ChatGPT Glossary: 61 AI Terms Everyone Should Know. This glossary will help you stay up-to-date.
 1. The RA1000’s 996 cc V-twin starts from the Aprilia Shiver. Access to Aprilia's engine tech gave Cyclone a shortcut most emerging manufacturers would kill for. Cyclone RA1000 vs Ducati Diavel: How Close Does China's 996
+--- 06/01/2026 ---
+1. This work introduces an in-situ nano-displacement measurement system via a multimode fiber probe with superoscillatory speckles and deep learning. It achieves 10 nm resolution and 99.95% accuracy for wafers.
