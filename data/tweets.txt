@@ -111,3 +111,4 @@
 --- 07/01/2026 ---
 1. Knowledge graph-enhanced deep learning for pharmaceutical demand forecasting. Scientific Reports - Knowledge graph- Enhanced Deep Learning for Pharmaceutical Demand Forecasting.
 1. N Nvidia announces DLSS 4.5 with 6x Frame Generation and improved image quality. DLSS includes Nvidia's second-generation Super Resolution transformer model and a new 6x Multi Frame Generation mode.
+1. DLSS isn’t done evolving, even if it means more and more AI. Nvidia Is Pushing the Number of Fake Frames for Games to Ludicrous Levels.
