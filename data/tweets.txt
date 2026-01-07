@@ -110,3 +110,4 @@
 1. This work introduces an in-situ nano-displacement measurement system via a multimode fiber probe with superoscillatory speckles and deep learning. It achieves 10 nm resolution and 99.95% accuracy for wafers.
 --- 07/01/2026 ---
 1. Knowledge graph-enhanced deep learning for pharmaceutical demand forecasting. Scientific Reports - Knowledge graph- Enhanced Deep Learning for Pharmaceutical Demand Forecasting.
+1. N Nvidia announces DLSS 4.5 with 6x Frame Generation and improved image quality. DLSS includes Nvidia's second-generation Super Resolution transformer model and a new 6x Multi Frame Generation mode.
