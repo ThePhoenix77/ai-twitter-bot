@@ -114,3 +114,4 @@
 1. DLSS isn’t done evolving, even if it means more and more AI. Nvidia Is Pushing the Number of Fake Frames for Games to Ludicrous Levels.
 --- 09/01/2026 ---
 1. Bayesian deep learning for probabilistic aquifer vulnerability and uncertainty prediction. Groundwater is the planet’s largest distributed store of freshwater. Yet aquifers are still managed largely with static, deterministic vulnerability indices.
+1. The Honor Magic 8 Pro launches in the UK with a focus on AI-powered night photos. The main camera is a 200MP telephoto lens built specifically for low-light zoom.
