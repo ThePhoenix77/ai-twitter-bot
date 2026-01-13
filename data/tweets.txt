@@ -117,3 +117,5 @@
 1. The Honor Magic 8 Pro launches in the UK with a focus on AI-powered night photos. The main camera is a 200MP telephoto lens built specifically for low-light zoom.
 --- 11/01/2026 ---
 1. Artificial Intelligence (AI) is well known, often evoking futuristic movies like Robocop,Terminator and The Matrix. Many don’t realize that AI has been part of our lives for decades. When you finish watching a movie on a streaming platfo…
+--- 13/01/2026 ---
+1. Deep learning-based assessment of periapical radiographic image quality, Scientific Reports.
