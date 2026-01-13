@@ -119,3 +119,4 @@
 1. Artificial Intelligence (AI) is well known, often evoking futuristic movies like Robocop,Terminator and The Matrix. Many don’t realize that AI has been part of our lives for decades. When you finish watching a movie on a streaming platfo…
 --- 13/01/2026 ---
 1. Deep learning-based assessment of periapical radiographic image quality, Scientific Reports.
+1. Tinygrad 0.12 Released With Mesa NIR/NAK Support. Tinygrad is a deep learning stack led by George Hotz.
