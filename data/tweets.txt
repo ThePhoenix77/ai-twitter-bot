@@ -126,3 +126,4 @@
 1. RNA modifications influence gene regulation, but global mapping was limited. ORCA is a deep learning framework using nanopore RNA sequencing to detect multiple modification types. It reveals isoform-specific patterns and regulatory in…
 1. Mapping IGRA2 data with R and ggplot2. R Programming tips on mapping IGra2 Radiosonde data.
 1. While 6x frame gen won’t be here until spring, better AI upscaling is more than welcome.
+1. R Programming tips to process IGRA2 Radiosonde data. The pipe (%>%) has revolutionized R programming.
