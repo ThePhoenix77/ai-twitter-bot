@@ -129,3 +129,5 @@
 1. R Programming tips to process IGRA2 Radiosonde data. The pipe (%>%) has revolutionized R programming.
 --- 16/01/2026 ---
 1. Burn is an MIT and Apache 2.0 licensed tensor library and deep learning framework written in the Rust programming language. Burn 0.20 brings some low-level changes as it continues to strive to deliver high performance.
+--- 18/01/2026 ---
+1. Best Aircraft That Shaped the Future of War and Peace. From World War II dogfights over Europe to modern stealth missions, these legendary warbirds altered combat.
