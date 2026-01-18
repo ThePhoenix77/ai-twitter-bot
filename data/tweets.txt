@@ -132,3 +132,4 @@
 --- 18/01/2026 ---
 1. Best Aircraft That Shaped the Future of War and Peace. From World War II dogfights over Europe to modern stealth missions, these legendary warbirds altered combat.
 1. Each of these four Google employees took different paths to pivot into AI. All of them spent roughly a year preparing for the transition.
+1. Google's CC is an experimental productivity agent covering Gmail, Drive, and Calendar. I tried Google's CC productivity agent in Workspace, and it's the personal assistant I can't afford.
