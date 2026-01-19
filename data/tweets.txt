@@ -134,3 +134,5 @@
 1. Each of these four Google employees took different paths to pivot into AI. All of them spent roughly a year preparing for the transition.
 1. Google's CC is an experimental productivity agent covering Gmail, Drive, and Calendar. I tried Google's CC productivity agent in Workspace, and it's the personal assistant I can't afford.
 1. Poking holes into bytecode with peephole optimisations. First optimizations I made while redesigning and semi-porting the purple-garden runtime from C to Rust.
+--- 19/01/2026 ---
+1. High-accuracy brain tumor detection method based on deep learning. Brain tumors remain among the most fatal diseases of the central nervous system. Early diagnosis is vital for improving patient survival outcomes.
