@@ -138,3 +138,5 @@
 1. High-accuracy brain tumor detection method based on deep learning. Brain tumors remain among the most fatal diseases of the central nervous system. Early diagnosis is vital for improving patient survival outcomes.
 --- 20/01/2026 ---
 1. Flux and Solder Paster Dispenser Looks Good While Doing It. Syringes are pretty ergonomic, but when manually dispensing flux and solder paste it doesn’t take long before one wants a better way. [Elektroarzt]’s
+--- 21/01/2026 ---
+1. SVASCilia is an open-source, deep learning-based tool for 3D analysis of cochlear hair cell stereocilia bundles. Cochlear hair cells are vital for hearing, but their 3D morphology remains unclear due to their complex organisation.
