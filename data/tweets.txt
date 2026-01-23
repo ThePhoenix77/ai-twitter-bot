@@ -142,3 +142,5 @@
 1. SVASCilia is an open-source, deep learning-based tool for 3D analysis of cochlear hair cell stereocilia bundles. Cochlear hair cells are vital for hearing, but their 3D morphology remains unclear due to their complex organisation.
 --- 22/01/2026 ---
 1. PyTorch 2.10 Released With More Improvements For AMD ROCm & Intel GPUs. PyTorch is a widely-used deep learning library.
+--- 23/01/2026 ---
+1. Open-source ExoMiner++ deep learning model uses an advanced algorithm to validate new planets. Trained on data from NASA’s exoplanet-hunting missions.
