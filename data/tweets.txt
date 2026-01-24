@@ -146,3 +146,4 @@
 1. Open-source ExoMiner++ deep learning model uses an advanced algorithm to validate new planets. Trained on data from NASA’s exoplanet-hunting missions.
 --- 24/01/2026 ---
 1. The role of low-complexity repeats in RNA–RNA interactions and a deep learning framework for duplex prediction. Interactions between long RNA molecules play essential roles in shaping gene regulation.
+1. AI Boosts Research Careers But Flattens Scientific Discovery, Ancient Slashdot reader erice says. While AI helped researchers publish more often and boosted their careers, the resulting papers were, on average, less useful. "You have this conflict between individual incenti…
