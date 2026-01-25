@@ -147,3 +147,5 @@
 --- 24/01/2026 ---
 1. The role of low-complexity repeats in RNA–RNA interactions and a deep learning framework for duplex prediction. Interactions between long RNA molecules play essential roles in shaping gene regulation.
 1. AI Boosts Research Careers But Flattens Scientific Discovery, Ancient Slashdot reader erice says. While AI helped researchers publish more often and boosted their careers, the resulting papers were, on average, less useful. "You have this conflict between individual incenti…
+--- 25/01/2026 ---
+1. Noora Health (YC W14) Is Hiring AI/ML Engineer, WHO WE ARE. Noora Health's mission is to improve outcomes and strengthen health systems.
