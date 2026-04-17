@@ -33,7 +33,7 @@ main.py ─▶ fetcher.fetch_news() ─▶ summarizer.summarize_article()
 - **`tweeter.py`** – Wraps `tweety.TweetClient` to log in and post each tweet with basic error handling.
 - **`helper.py`** – Optional console helper for printing fetched articles during debugging.
 
-## 📁 Project Structure
+## Project Structure
 ```
 ai-twitter-bot/
 ├── architecture.txt          # Textual architecture overview
@@ -52,7 +52,7 @@ ai-twitter-bot/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 1. **Clone the repo**
     ```bash
     git clone https://github.com/ThePhoenix77/ai-twitter-bot.git
@@ -75,7 +75,7 @@ ai-twitter-bot/
     > `summarizer.py` will download the BART weights the first time it runs; keep the environment active until it completes.
 4. **Review configuration** in `config/config.py` to adjust keywords, fetch limit, or number of tweets to publish per run.
 
-## ▶️ Usage
+## Usage
 - **Dry run (no posting):** Comment out the `tweet_daily` call in `main.py` to inspect the summaries first.
 - **Full run:**
   ```bash
@@ -83,7 +83,7 @@ ai-twitter-bot/
   ```
   The script fetches articles, prints the top scoring summaries, saves them under `data/`, and posts any tweets that are not yet in the history file.
 
-## 🔄 Future Enhancements.
+## Future Enhancements.
 - Adding semantic similarity checks (e.g., embeddings) instead of keyword scoring alone.
 - Expanding to multiple niches by parameterising the configuration or loading from external files.
 - Introducing richer logging or notifications for failures.
