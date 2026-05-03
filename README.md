@@ -1,6 +1,8 @@
 # ai-twitter-bot
 
-An automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
+<img width="1197" height="718" alt="ai-twitter-bot" src="https://github.com/user-attachments/assets/e47f7ebf-abe4-46a7-afa0-2acef9281ac7" />
+
+`ai-twitter-bot` is an automated Twitter (X) assistant that fetches niche news, distills each article into tweet sized summaries and posts the tweets on your behalf.
 You can check my X account [seabasszealot](https://x.com/seabasszealot), being ran by it.
 
 ## Features
