@@ -67,6 +67,8 @@ ai-twitter-bot/
     pip install -r requirements.txt
     ```
 3. **Create a `.env` file** in the project root:
+
+   You can get your API keys and credentials of the news API from [newsapi.org](https://newsapi.org/) and Twitter/X from [docs.x.com/x-api](https://docs.x.com/x-api/overview).
     ```ini
     NEWS_API_KEY=your_newsapi_key
     X_API_KEY=your_x_api_key
