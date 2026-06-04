@@ -149,28 +149,3 @@
 1. AI Boosts Research Careers But Flattens Scientific Discovery, Ancient Slashdot reader erice says. While AI helped researchers publish more often and boosted their careers, the resulting papers were, on average, less useful. "You have this conflict between individual incenti…
 --- 25/01/2026 ---
 1. Noora Health (YC W14) Is Hiring AI/ML Engineer, WHO WE ARE. Noora Health's mission is to improve outcomes and strengthen health systems.
---- 04/06/2026 ---
-1. We finally know why deep learning works.
-2. Today, AWS Parallel Computing Service (AWS PCS) launches PCS-ready DLAMI, an AWS-maintained Amazon Machine Image built on the Deep Learning Base GPU AMI (Ubuntu 24.04)
-3. Model building in cryo-EM strongly depends on its map quality. Here, the authors propose EMReady2, a generalist tool for fast improvement of cryo-EM and cryo-ET maps at 2–10 Å resolutions with local quality-aware deep learning.
-4. Neglected tropical diseases lack automated diagnostic pipelines, hindering effective point-of-care testing. Here, the authors develop an automated pipeline using deep learning and signal processing for schistosomiasis antigen tests,...
-5. Dou and colleagues present DynNet, a biophysically informed deep learning framework that reconstructs continuous cellular dynamics from time-resolved single-cell data
-6. Scientific Reports - Lightweight deep learning model for nonconvulsive status epilepticus diagnosis using EEG time–frequency analysis
-7. Scientific Reports - Hybrid deep learning and ES-MDA for pressure transient inversion in radial composite reservoirs
-8. Scientific Reports - Application of deep learning based motion posture recognition in sports training
-9. Scientific Reports - Veterinary fracture diagnosis: a deep learning model for dogs long bone fractures
-10. Scientific Reports - Construction of a multi-dimensional predictive model for college students’ academic performance based on deep learning
-11. Scientific Reports - A hybrid deep learning model with adaptive feature fusion for automated rice leaf disease detection and classification
-12. Scientific Reports - Enhancing crop yield prediction accuracy with a novel interpretable deep learning model: MHCNN-LSTM-MHA
-13. Scientific Reports - A deep learning-based model for automatic syntactic complexity assessment in L2 English writing: development and pedagogical application
-14. Scientific Reports - An explainable multimodal temporal deep learning framework for intrusion detection (EMT-IDNet) in IoT environments
-15. Scientific Reports - Dynamic analysis for employment substitution effect of robots fused with deep learning models and artificial intelligence
-16. Scientific Reports - Hybrid vision–IMU deep learning framework with graph convolutional networks and attention for personalized yoga posture identification
-17. Scientific Reports - A hyperspectral imaging framework integrating band selection and deep learning for beverage stain classification in forensic analysis
-18. Scientific Reports - Residual-aware lightweight deep learning framework for high-fidelity intrusion detection in UAV swarm networks
-19. Scientific Reports - From EEG signals to quantitative assessment: predicting depression severity using a novel deep learning framework
-20. Scientific Reports - A decompose-reshape-ensemble deep learning framework for multi-scale short-term photovoltaic power forecasting
-21. Lessons from radiology on how automating output shouldn’t mean eliminating checks and guardrails.
-22. Teddy Warner created Heard Recently, a website showing the birds heard near his apartment. Unlike our Bird Buddy (a smart feeder with a camera) it uses audio to identify avian visitors and doesn't require a subscription
-23. An analysis of diet-induced obesity using MouseMapper—a suite of foundation-model-based deep-learning algorithms—identifies structural alterations of the infraorbital branch of the trigeminal ganglia.
-24. The post 3 Legged Thing Launches AirHed Cine CC Fluid Video Head for Modern Creators appeared first on Digital Photography School
