@@ -1,0 +1,19 @@
+Scientific Reports - Lightweight deep learning model for nonconvulsive status epilepticus diagnosis using EEG time–frequency analysis || https://www.nature.com/articles/s41598-026-54785-6
+Scientific Reports - Hybrid deep learning and ES-MDA for pressure transient inversion in radial composite reservoirs || https://www.nature.com/articles/s41598-026-55349-4
+Scientific Reports - Application of deep learning based motion posture recognition in sports training || https://www.nature.com/articles/s41598-026-50738-1
+Scientific Reports - Veterinary fracture diagnosis: a deep learning model for dogs long bone fractures || https://www.nature.com/articles/s41598-026-50387-4
+Scientific Reports - Construction of a multi-dimensional predictive model for college students’ academic performance based on deep learning || https://www.nature.com/articles/s41598-026-51012-0
+Scientific Reports - A hybrid deep learning model with adaptive feature fusion for automated rice leaf disease detection and classification || https://www.nature.com/articles/s41598-026-52534-3
+Scientific Reports - Enhancing crop yield prediction accuracy with a novel interpretable deep learning model: MHCNN-LSTM-MHA || https://www.nature.com/articles/s41598-026-53616-y
+Scientific Reports - A deep learning-based model for automatic syntactic complexity assessment in L2 English writing: development and pedagogical application || https://www.nature.com/articles/s41598-026-53282-0
+Scientific Reports - An explainable multimodal temporal deep learning framework for intrusion detection (EMT-IDNet) in IoT environments || https://www.nature.com/articles/s41598-026-53557-6
+Scientific Reports - Dynamic analysis for employment substitution effect of robots fused with deep learning models and artificial intelligence || https://www.nature.com/articles/s41598-026-51853-9
+Scientific Reports - Hybrid vision–IMU deep learning framework with graph convolutional networks and attention for personalized yoga posture identification || https://www.nature.com/articles/s41598-026-49970-6
+Scientific Reports - A hyperspectral imaging framework integrating band selection and deep learning for beverage stain classification in forensic analysis || https://www.nature.com/articles/s41598-026-49928-8
+Scientific Reports - Residual-aware lightweight deep learning framework for high-fidelity intrusion detection in UAV swarm networks || https://www.nature.com/articles/s41598-026-52524-5
+Scientific Reports - From EEG signals to quantitative assessment: predicting depression severity using a novel deep learning framework || https://www.nature.com/articles/s41598-026-52845-5
+Scientific Reports - A decompose-reshape-ensemble deep learning framework for multi-scale short-term photovoltaic power forecasting || https://www.nature.com/articles/s41598-026-53170-7
+Lessons from radiology on how automating output shouldn’t mean eliminating checks and guardrails. || https://hbr.org/2026/06/big-techs-looming-capability-crisis
+Teddy Warner created Heard Recently, a website showing the birds heard near his apartment. Unlike our Bird Buddy (a smart feeder with a camera) it uses audio to identify avian visitors and doesn't require a subscription || https://boingboing.net/2026/05/31/80-diy-bird.html
+An analysis of diet-induced obesity using MouseMapper—a suite of foundation-model-based deep-learning algorithms—identifies structural alterations of the infraorbital branch of the trigeminal ganglia. || https://www.nature.com/articles/s41586-026-10535-2
+The post 3 Legged Thing Launches AirHed Cine CC Fluid Video Head for Modern Creators appeared first on Digital Photography School || https://digital-photography-school.com/3-legged-thing-launches-airhed-cine-cc-fluid-video-head-for-modern-creators/
