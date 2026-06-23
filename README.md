@@ -25,14 +25,14 @@ main.py ─▶ fetcher.fetch_news() ─▶ summarizer.summarize_article()
                     │
                     ├─▶ storage.filter_duplicates()    └─▶ storage.save_tweets_to_history()
                     │
-                    └─▶ tweeter.tweet_daily()
+                    └─▶ tweeter.py posts the queued tweet
 ```
 
-- **`config/config.py`** – Lists the niche keywords, article cap, and daily tweet count.
+- **`config.py`** – Lists the niche keywords, article cap, and daily tweet count.
 - **`fetcher.py`** – Builds the NewsAPI query and extracts title/description/URL triples.
 - **`summarizer.py`** – Loads the BART summarisation pipeline and scores summaries by keyword hits.
 - **`storage.py`** – Persists tweet history (`data/tweets.txt`) and the current batch (`data/daily_tweets.txt`).
-- **`tweeter.py`** – Wraps `tweety.TweetClient` to log in and post each tweet with basic error handling.
+- **`tweeter.py`** – Posts through Tweepy by default, with an optional Xquik backend.
 - **`helper.py`** – Optional console helper for printing fetched articles during debugging.
 
 ## Project Structure
@@ -75,9 +75,18 @@ ai-twitter-bot/
     X_API_KEY_SECRET=your_x_api_key_secret
     ACCESS_TOKEN=your_x_access_token
     ACCESS_TOKEN_SECRET=your_x_access_token_secret
+    TWITTER_BACKEND=tweepy
+    ```
+    To post through Xquik instead of Tweepy, set:
+    ```ini
+    TWITTER_BACKEND=xquik
+    XQUIK_API_KEY=your_xquik_api_key
+    XQUIK_ACCOUNT=your_connected_x_account
+    # Optional:
+    XQUIK_API_BASE=https://xquik.com/api/v1
     ```
     > `summarizer.py` will download the BART weights the first time it runs; keep the environment active until it completes.
-4. **Review configuration** in `config/config.py` to adjust keywords, fetch limit, or number of tweets to publish per run.
+4. **Review configuration** in `config.py` to adjust keywords, fetch limit, or number of tweets to publish per run.
 
 ## Usage
 - **Dry run (no posting):** Comment out the `tweet_daily` call in `main.py` to inspect the summaries first.

@@ -36,6 +36,10 @@ jobs:
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          TWITTER_BACKEND: ${{ vars.TWITTER_BACKEND }}
+          XQUIK_API_KEY: ${{ secrets.XQUIK_API_KEY }}
+          XQUIK_ACCOUNT: ${{ secrets.XQUIK_ACCOUNT }}
+          XQUIK_API_BASE: ${{ vars.XQUIK_API_BASE }}
         run: python3.11 main.py
 
       # Letting the github action to commit & push updated files(data/daily_tweet.txt & data/tweets.txt)
